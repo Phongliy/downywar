@@ -23,17 +23,17 @@ font = pygame.font.Font(None, 50)
 
 # Load ảnh items
 heart_size = 50
-heart_img = pygame.image.load("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\hp.png")
+heart_img = pygame.image.load("hp.png")
 heart_img = pygame.transform.scale(heart_img, (heart_size, heart_size))
 heart_img.set_colorkey(WHITE)
 
 shield_size = 50
-shield_img = pygame.image.load("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\shield.png")
+shield_img = pygame.image.load("shield.png")
 shield_img = pygame.transform.scale(shield_img, (shield_size, shield_size))
 shield_img.set_colorkey(WHITE)
 
 bullets_size = 50
-bullets_img = pygame.image.load("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\bullet.png")
+bullets_img = pygame.image.load("bullet.png")
 bullets_img = pygame.transform.scale(bullets_img, (bullets_size, bullets_size))
 bullets_img.set_colorkey(WHITE)
 
@@ -45,19 +45,19 @@ def random_pos(size):
 
 # Load ảnh nhân vật theo loại súng (để trống đường dẫn cho bạn điền)
 # Player 1
-snake1_ak_img = pygame.image.load("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\nv1ak.png")  # Điền đường dẫn cho AK
+snake1_ak_img = pygame.image.load("nv1ak.png")  # Điền đường dẫn cho AK
 snake1_ak_img = pygame.transform.scale(snake1_ak_img, (70,50))
-snake1_sniper_img = pygame.image.load("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\nv1awm.png")  # Điền đường dẫn cho SNIPER
+snake1_sniper_img = pygame.image.load("nv1awm.png")  # Điền đường dẫn cho SNIPER
 snake1_sniper_img = pygame.transform.scale(snake1_sniper_img, (70, 50))
-snake1_shotgun_img = pygame.image.load("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\nv1shotgun.png")  # Điền đường dẫn cho SHOTGUN
+snake1_shotgun_img = pygame.image.load("nv1shotgun.png")  # Điền đường dẫn cho SHOTGUN
 snake1_shotgun_img = pygame.transform.scale(snake1_shotgun_img, (70, 50))
 
 # Player 2
-snake2_ak_img = pygame.image.load("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\nv2ak.png")  # Điền đường dẫn cho AK
+snake2_ak_img = pygame.image.load("nv2ak.png")  # Điền đường dẫn cho AK
 snake2_ak_img = pygame.transform.scale(snake2_ak_img, (70, 50))
-snake2_sniper_img = pygame.image.load("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\nv2awm.png")  # Điền đường dẫn cho SNIPER
+snake2_sniper_img = pygame.image.load("nv2awm.png")  # Điền đường dẫn cho SNIPER
 snake2_sniper_img = pygame.transform.scale(snake2_sniper_img, (70, 50))
-snake2_shotgun_img = pygame.image.load("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\nv2shotgun.png")  # Điền đường dẫn cho SHOTGUN
+snake2_shotgun_img = pygame.image.load("nv2shotgun.png")  # Điền đường dẫn cho SHOTGUN
 snake2_shotgun_img = pygame.transform.scale(snake2_shotgun_img, (70, 50))
 
 # Lớp đạn
@@ -119,11 +119,11 @@ def load_map(path):
         return pygame.transform.scale(img, (WIDTH, HEIGHT))
     return None
 
-map1_img = load_map("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\map1.png")
-map1_background = load_map("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\map1bg.png")
-map2_img = load_map("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\map2.png")
-map2_background = load_map("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\map2bg.png")
-title_img = pygame.image.load("C:\\Users\\Admin\\Desktop\\cuộc suống tươi đẹp\\title.png")
+map1_img = load_map("map1.png")
+map1_background = load_map("map1bg.png")
+map2_img = load_map("map2.png")
+map2_background = load_map("map2bg.png")
+title_img = pygame.image.load("title.png")
 title_img = pygame.transform.scale(title_img, (1145, 508))
 map1_mask = pygame.mask.from_surface(map1_img) if map1_img else None
 map1_background_mask = pygame.mask.from_surface(map1_background) if map1_background else None
